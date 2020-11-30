@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-webtina-dev-24024-authRole",
+      "UnauthRoleArn": "arn:aws:iam::286652692075:role/amplify-webtina-dev-24024-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::286652692075:role/amplify-webtina-dev-24024-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-webtina-dev-24024-deployment",
+      "UnauthRoleName": "amplify-webtina-dev-24024-unauthRole",
+      "StackName": "amplify-webtina-dev-24024",
+      "StackId": "arn:aws:cloudformation:us-west-2:286652692075:stack/amplify-webtina-dev-24024/74eab870-32f8-11eb-9293-06491fb55b7d",
+      "AmplifyAppId": "dy6clc5t4jzyp"
+    },
+    "categories": {
+      "auth": {
+        "webtina6ec3cc21": {}
+      }
+    }
+  }
+}
