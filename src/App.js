@@ -4,9 +4,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import { Box, Container, Grid } from '@material-ui/core';
+import { Box, CardActions, Container, Grid } from '@material-ui/core';
 import Card from '@material-ui/core/Card';
-import { CardActionArea, CardMedia, CardContent } from '@material-ui/core';
+import { CardActionArea, CardMedia, CardContent, Button } from '@material-ui/core';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -44,6 +44,12 @@ const useStyles = makeStyles((theme) => ({
 
     media: {
         height: 240,
+    },
+
+    cardActions: {
+        display: 'flex',
+        margin: '0 10px',
+        justifyContent: 'space-between',
     }
 }))
 
@@ -55,7 +61,7 @@ function App() {
         <AppBar className={classes.appBar} position='static'>
             <Toolbar>
                 <Typography variant='h6' color='primary' >
-                    Home
+                    Home | Tina Kovacova
                 </Typography>
             </Toolbar>
         </AppBar>
@@ -64,7 +70,7 @@ function App() {
         </Box>
         <Container maxWidth='lg' className={classes.blogsContainer}> 
             <Typography variant='h4' className={classes.blogTitle} >
-                Portfolio
+                My Work
             </Typography>
             <Grid container spacing={3}>
                 <Grid item xs={12} sm={6} md={4}>
@@ -84,22 +90,79 @@ function App() {
                         </Typography>
                         </CardContent>
                     </CardActionArea>
-                    {/* <CardActions>
+                    {/* <CardActions className={classes.cardActions}>
+                        {/* <Box className={classes.button}></Box> 
+                    </CardActions> */}
+                    <CardActions>
                         <Button size="small" color="primary">
-                        Share
+                        Demo
                         </Button>
                         <Button size="small" color="primary">
                         Learn More
                         </Button>
-                    </CardActions> */}
+                    </CardActions>
                 </Card>
 
                 </Grid>
                 <Grid item xs={12} sm={6} md={4}>
-
+                <Card className={classes.card}>
+                    <CardActionArea>
+                        <CardMedia
+                        className={classes.media}
+                        image="/static/images/cards/contemplative-reptile.jpg"
+                        title="Contemplative Reptile"
+                        />
+                        <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                            Project 2
+                        </Typography>
+                        <Typography variant="body2" color="textSecondary" component="p">
+                            Project description goes here
+                        </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                    {/* <CardActions className={classes.cardActions}>
+                        {/* <Box className={classes.button}></Box> 
+                    </CardActions> */}
+                    <CardActions>
+                        <Button size="small" color="primary">
+                        Demo
+                        </Button>
+                        <Button size="small" color="primary">
+                        Learn More
+                        </Button>
+                    </CardActions>
+                </Card>
                 </Grid>
                 <Grid item xs={12} sm={6} md={4}>
-
+                <Card className={classes.card}>
+                    <CardActionArea>
+                        <CardMedia
+                        className={classes.media}
+                        image="/static/images/cards/contemplative-reptile.jpg"
+                        title="Contemplative Reptile"
+                        />
+                        <CardContent>
+                        <Typography gutterBottom variant="h5" component="h2">
+                            Project 3
+                        </Typography>
+                        <Typography variant="body2" color="textSecondary" component="p">
+                            Project description goes here
+                        </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                    {/* <CardActions className={classes.cardActions}>
+                        {/* <Box className={classes.button}></Box> 
+                    </CardActions> */}
+                    <CardActions>
+                        <Button size="small" color="primary">
+                        Demo
+                        </Button>
+                        <Button size="small" color="primary">
+                        Learn More
+                        </Button>
+                    </CardActions>
+                </Card>
                 </Grid>
             </Grid>
         </Container>
