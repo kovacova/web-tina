@@ -61,32 +61,35 @@ function App() {
         <AppBar className={classes.appBar} position='static'>
             <Toolbar>
                 <Typography variant='h6' color='primary' >
-                    Home | Tina Kovacova
+                    Tina Kovacova
                 </Typography>
             </Toolbar>
         </AppBar>
         <Box className={classes.hero}>
-            <Box>Welcome to my Digital Garden</Box>
+            <Box> Welcome to my [budding] Digital Garden</Box>
         </Box>
         <Container maxWidth='lg' className={classes.blogsContainer}> 
             <Typography variant='h4' className={classes.blogTitle} >
                 My Work
             </Typography>
+            <p>Most of my work is "work in progress", but still, here are a few things I'd like to share with the world.</p> 
+            <br></br><br></br>
+
             <Grid container spacing={3}>
                 <Grid item xs={12} sm={6} md={4}>
                 <Card className={classes.card}>
                     <CardActionArea>
                         <CardMedia
                         className={classes.media}
-                        image="/static/images/cards/contemplative-reptile.jpg"
-                        title="Contemplative Reptile"
+                        image="https://images.unsplash.com/photo-1493382051629-7eb03ec93ea2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2850&q=80"
+                        title="A seedling in the middle of the desert"
                         />
                         <CardContent>
                         <Typography gutterBottom variant="h5" component="h2">
-                            Spotifinder
+                            Digital Garden
                         </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">
-                            Project description goes here
+                            You might have heard of digital gardening - bits and scraps of your own learning, shared with the world. This is where I share and publish some of them.
                         </Typography>
                         </CardContent>
                     </CardActionArea>
@@ -94,10 +97,10 @@ function App() {
                         {/* <Box className={classes.button}></Box> 
                     </CardActions> */}
                     <CardActions>
-                        <Button size="small" color="primary">
+                        <Button size="small" color="primary" disabled='true'>
                         Demo
                         </Button>
-                        <Button size="small" color="primary">
+                        <Button size="small" color="primary" disabled='true'>
                         Learn More
                         </Button>
                     </CardActions>
@@ -109,15 +112,15 @@ function App() {
                     <CardActionArea>
                         <CardMedia
                         className={classes.media}
-                        image="/static/images/cards/contemplative-reptile.jpg"
-                        title="Contemplative Reptile"
+                        image="https://images.unsplash.com/photo-1495434942214-9b525bba74e9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80"
+                        title="A music app recommending only the loveliest of songs"
                         />
                         <CardContent>
                         <Typography gutterBottom variant="h5" component="h2">
-                            Project 2
+                        Spotify Music Recommender
                         </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">
-                            Project description goes here
+                            Here's my favourite machine learning project - I hope you find a song you love!
                         </Typography>
                         </CardContent>
                     </CardActionArea>
@@ -125,10 +128,10 @@ function App() {
                         {/* <Box className={classes.button}></Box> 
                     </CardActions> */}
                     <CardActions>
-                        <Button size="small" color="primary">
+                        <Button size="small" color="primary" href='https://bw-spotify.netlify.app/' target="_blank">
                         Demo
                         </Button>
-                        <Button size="small" color="primary">
+                        <Button size="small" color="primary" disabled='true'>
                         Learn More
                         </Button>
                     </CardActions>
@@ -139,29 +142,28 @@ function App() {
                     <CardActionArea>
                         <CardMedia
                         className={classes.media}
-                        image="/static/images/cards/contemplative-reptile.jpg"
-                        title="Contemplative Reptile"
+                        image="https://images.unsplash.com/photo-1484528215557-1395a4b4b8a6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80"
+                        title="A Snow Fox"
                         />
                         <CardContent>
                         <Typography gutterBottom variant="h5" component="h2">
-                            Project 3
                         </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">
-                            Project description goes here
+                            There are a few more exciting things I'm working on - and well - they'll be ready when they're done :)
                         </Typography>
                         </CardContent>
                     </CardActionArea>
                     {/* <CardActions className={classes.cardActions}>
                         {/* <Box className={classes.button}></Box> 
                     </CardActions> */}
-                    <CardActions>
+                    {/* <CardActions>
                         <Button size="small" color="primary">
                         Demo
                         </Button>
                         <Button size="small" color="primary">
                         Learn More
                         </Button>
-                    </CardActions>
+                    </CardActions> */}
                 </Card>
                 </Grid>
             </Grid>
