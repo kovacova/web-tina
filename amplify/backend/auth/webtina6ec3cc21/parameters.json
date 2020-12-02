@@ -1,6 +1,6 @@
 {
     "identityPoolName": "webtina6ec3cc21_identitypool_6ec3cc21",
-    "allowUnauthenticatedIdentities": false,
+    "allowUnauthenticatedIdentities": true,
     "resourceNameTruncated": "webtin6ec3cc21",
     "userPoolName": "webtina6ec3cc21_userpool_6ec3cc21",
     "autoVerifiedAttributes": [
