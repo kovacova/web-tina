@@ -72,7 +72,7 @@ function App() {
             <Typography variant='h4' className={classes.blogTitle} >
                 My Work
             </Typography>
-            <p>This is an experiment in authenticity. Most of my work is "work in progress", but still, here are a few things I'd like to share with the world.</p> 
+            <p>This is an experiment in authenticity and learning. Most of my work is "work in progress", but still, here are a few things I'd like to share with the world.</p> 
             <br></br><br></br>
 
             <Grid container spacing={3}>
@@ -149,7 +149,7 @@ function App() {
                         <Typography gutterBottom variant="h5" component="h2">
                         </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">
-                            There are a few more exciting things I'm working on - and well - they'll be ready when they're done :)
+                            There are a few more exciting ideas I hope to materialize - and well - they'll be ready when they're done :)
                         </Typography>
                         </CardContent>
                     </CardActionArea>
