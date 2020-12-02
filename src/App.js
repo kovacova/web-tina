@@ -72,7 +72,7 @@ function App() {
             <Typography variant='h4' className={classes.blogTitle} >
                 My Work
             </Typography>
-            <p>Most of my work is "work in progress", but still, here are a few things I'd like to share with the world.</p> 
+            <p>This is an experiment in authenticity. Most of my work is "work in progress", but still, here are a few things I'd like to share with the world.</p> 
             <br></br><br></br>
 
             <Grid container spacing={3}>
