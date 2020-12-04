@@ -7,6 +7,9 @@ import Typography from '@material-ui/core/Typography';
 import { Box, CardActions, Container, Grid } from '@material-ui/core';
 import Card from '@material-ui/core/Card';
 import { CardActionArea, CardMedia, CardContent, Button } from '@material-ui/core';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
+import SearchIcon from '@material-ui/icons/Search';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -57,14 +60,26 @@ function App() {
     const classes = useStyles();
 
   return (
+    
     <div className='App'>
-        <AppBar className={classes.appBar} position='static'>
+        <AppBar position="static" color='#fff'>
+            <Toolbar>
+                <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+                <MenuIcon />
+                </IconButton>
+                <Typography variant="h6" className={classes.title}>
+                Tina Kovacova
+                </Typography>
+                {/* <Button color="inherit">Login</Button> */}
+            </Toolbar>
+        </AppBar>
+        {/* <AppBar className={classes.appBar} position='static'>
             <Toolbar>
                 <Typography variant='h6' color='primary' >
                     Tina Kovacova
                 </Typography>
             </Toolbar>
-        </AppBar>
+        </AppBar> */}
         <Box className={classes.hero}>
             <Box> Welcome to my [budding] Digital Garden</Box>
         </Box>
