@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 // import './App.css';
 import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
@@ -15,6 +15,12 @@ import {
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 import SearchIcon from "@material-ui/icons/Search";
+import { Route, Switch, Redirect } from "react-router-dom";
+import { render } from "@testing-library/react";
+import NavBar from "./components/navbar";
+import About from "./components/about";
+import Blog from "./components/blog";
+import Home from "./components/home";
 
 const useStyles = makeStyles((theme) => ({
   appBar: {
@@ -127,7 +133,7 @@ function App() {
                 </CardContent>
               </CardActionArea>
               {/* <CardActions className={classes.cardActions}>
-                        {/* <Box className={classes.button}></Box> 
+                        {/* <Box className={classes.button}></Box>
                     </CardActions> */}
               <CardActions>
                 <Button size="small" color="primary" disabled="true">
@@ -162,7 +168,7 @@ function App() {
                 </CardContent>
               </CardActionArea>
               {/* <CardActions className={classes.cardActions}>
-                        {/* <Box className={classes.button}></Box> 
+                        {/* <Box className={classes.button}></Box>
                     </CardActions> */}
               <CardActions>
                 <Button
@@ -205,7 +211,7 @@ function App() {
                 </CardContent>
               </CardActionArea>
               {/* <CardActions className={classes.cardActions}>
-                        {/* <Box className={classes.button}></Box> 
+                        {/* <Box className={classes.button}></Box>
                     </CardActions> */}
               {/* <CardActions>
                         <Button size="small" color="primary">
@@ -222,5 +228,26 @@ function App() {
     </div>
   );
 }
+
+// ROUTES - FULLY FUNCTIONAL 🎉
+// class App extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <NavBar />
+//         <div className="content">
+//           <Switch>
+//             // We want to order the routes from most specific to most generic
+//             ones
+//             <Route path="/about" component={About} />
+//             <Route path="/blog" component={Blog} />
+//             <Route path="/" component={Home} />
+//             {/* <Redirect to="not-found" /> - TODO: add this later */}
+//           </Switch>
+//         </div>
+//       </div>
+//     );
+//   }
+// }
 
 export default App;
